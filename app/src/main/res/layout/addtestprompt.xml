@@ -8,11 +8,12 @@
 
     <EditText
         android:id="@+id/testName"
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
-        android:hint="Test Name"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/mark"
+        android:hint="Test Name"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -20,11 +21,12 @@
 
     <EditText
         android:id="@+id/mark"
-        android:layout_width="wrap_content"
+        android:layout_width="48dp"
         android:layout_height="wrap_content"
-        android:hint="mark"
         android:layout_marginTop="24dp"
+        android:hint="mark"
         android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/weight"
         app:layout_constraintStart_toEndOf="@+id/testName"
         app:layout_constraintTop_toTopOf="parent">
@@ -33,16 +35,30 @@
 
     <EditText
         android:id="@+id/weight"
-        android:layout_width="wrap_content"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
         android:hint="weight"
         android:inputType="numberDecimal"
-        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/mark"
         app:layout_constraintTop_toTopOf="parent">
 
     </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Add Test"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/testName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
